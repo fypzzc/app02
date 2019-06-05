@@ -24,6 +24,7 @@ public class CourseController {
     @GetMapping("findAll")
     public Message findAll(){
         List<Course> list = courseService.findAll();
+        System.out.println();
         return MessageUtil.success("success",list);
     }
 
